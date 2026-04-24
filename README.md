@@ -15,7 +15,7 @@ Initia's architecture features multiple L2 appchains (MiniEVM, MiniWasm, MiniMov
 InitScan provides **four capabilities in one platform**:
 
 1. 📡 **Real-time cross-rollup transaction explorer** with live Socket.io feed
-2. 🤖 **AI-powered natural language query engine** (Claude) for on-chain data
+2. 🤖 **AI-powered natural language query engine** (OpenAI) for on-chain data
 3. 🔔 **Smart alert system** for whale movements and contract events
 4. 📊 **Developer analytics hub** with ecosystem-wide charts and stats
 
@@ -33,7 +33,7 @@ InitScan provides **four capabilities in one platform**:
 ┌──────────────────────┴───────────────────────────────┐
 │              BACKEND (Express.js + Socket.io)        │
 │   REST API │ Chain Poller │ Alert Engine              │
-│   Health Checker │ AI Query Engine (Claude)           │
+│   Health Checker │ AI Query Engine (OpenAI)             │
 └──────────────────────┬───────────────────────────────┘
                        │
 ┌──────────────────────┴───────────────────────────────┐
@@ -55,7 +55,7 @@ InitScan provides **four capabilities in one platform**:
 |---------|-------------|
 | 📡 **Live Dashboard** | Real-time scrolling tx feed with chain filters, whale filter, pause/resume |
 | 🔍 **Explorer** | Full searchable, filterable, paginated transaction table |
-| 🤖 **AI Query** | Natural language → MongoDB queries via Claude API |
+| 🤖 **AI Query** | Natural language → MongoDB queries via OpenAI API |
 | 🔔 **Smart Alerts** | Configurable alerts for whale txs, specific types, chains, addresses |
 | 📊 **Analytics** | 6 interactive Recharts: by chain, type, tag, hourly, whale ratio, fail rate |
 | 🏥 **Rollup Health** | Real-time status of all 6 chains with uptime indicators |
@@ -71,7 +71,7 @@ InitScan provides **four capabilities in one platform**:
 ![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
 ![Socket.io](https://img.shields.io/badge/Socket.io-010101?style=flat&logo=socket.io&logoColor=white)
-![Anthropic](https://img.shields.io/badge/Claude_AI-8B5CF6?style=flat)
+![OpenAI](https://img.shields.io/badge/OpenAI_API-412991?style=flat&logo=openai&logoColor=white)
 
 ### Frontend
 ![React](https://img.shields.io/badge/React_18-61DAFB?style=flat&logo=react&logoColor=black)
@@ -87,7 +87,7 @@ InitScan provides **four capabilities in one platform**:
 ### Prerequisites
 - Node.js 18+
 - MongoDB running locally (or MongoDB Atlas URI)
-- Anthropic API key (for AI Query)
+- OpenAI API key (for AI Query)
 
 ### 1. Clone
 ```bash
@@ -100,7 +100,7 @@ cd initscan
 cd backend
 npm install
 cp .env.example .env   # or edit .env directly
-# Set your ANTHROPIC_API_KEY in .env
+# Set your OPENAI_API_KEY in .env
 npm run dev
 ```
 
@@ -158,7 +158,7 @@ Open **http://localhost:5173** in your browser.
 
 InitScan belongs in the AI & Tooling track because it:
 - Provides **developer tooling** that doesn't exist yet for the Initia ecosystem
-- Uses **AI (Claude)** to enable natural language on-chain data exploration
+- Uses **AI (OpenAI)** to enable natural language on-chain data exploration
 - Delivers a **real-time observability layer** for cross-rollup monitoring
 - Is a complete, **production-grade** platform ready for ecosystem adoption
 

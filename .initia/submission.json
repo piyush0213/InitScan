@@ -1,0 +1,33 @@
+{
+  "project_name": "InitScan",
+  "tagline": "The unified, AI-powered observability layer for the interwoven Initia ecosystem.",
+  "description": "InitScan is a production-grade, real-time cross-rollup intelligence platform. It acts as the first unified observability layer that actively indexes, monitors, and visualizes on-chain activity across all Initia rollups simultaneously. It features an AI-powered natural language query engine, real-time Socket.io live feeds, smart conditional alerting, and ecosystem-wide analytics.",
+  "track": "AI & Tooling",
+  "category": "Crypto / Web3",
+  "chains": [
+    "initia-testnet",
+    "minimove-1",
+    "miniwasm-1",
+    "minievm-1",
+    "drip-1",
+    "yieldmind-1"
+  ],
+  "tech_stack": [
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Socket.io",
+    "React",
+    "Vite",
+    "TailwindCSS",
+    "OpenAI API"
+  ],
+  "repository": "https://github.com/piyush0213/InitScan",
+  "demo_video": "https://youtu.be/zHQp3mp4RhY",
+  "team": [
+    {
+      "name": "Piyush",
+      "role": "Full Stack / AI Developer"
+    }
+  ]
+}
